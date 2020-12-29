@@ -495,9 +495,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp 28.72
-    #define DEFAULT_Ki 2.62
-    #define DEFAULT_Kd 78.81
+    #define DEFAULT_Kp 32.90
+    #define DEFAULT_Ki 3.70
+    #define DEFAULT_Kd 73.18
   #endif
 #endif // PIDTEMP
 
@@ -536,9 +536,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 462.10
-  #define DEFAULT_bedKi 85.47
-  #define DEFAULT_bedKd 624.59
+  #define DEFAULT_bedKp 207.61
+  #define DEFAULT_bedKi 40.47
+  #define DEFAULT_bedKd 710.10
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -743,7 +743,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 415 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -989,7 +989,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET {  -44, -8, 0 }
+#define NOZZLE_TO_PROBE_OFFSET {  -49, 0, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
