@@ -630,7 +630,7 @@
 //#define USE_ZMAX_PLUG
 
 // Enable pullup for all endstops to prevent a floating state
-//#define ENDSTOPPULLUPS
+#define ENDSTOPPULLUPS
 #if DISABLED(ENDSTOPPULLUPS)
   // Disable ENDSTOPPULLUPS to set pullups individually
   //#define ENDSTOPPULLUP_XMAX
@@ -827,7 +827,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -864,7 +864,7 @@
  *      - normally-open switches to 5V and D32.
  *
  */
-#define Z_MIN_PROBE_PIN Z_PROBE_PIN // Pin 32 is the RAMPS default
+//#define Z_MIN_PROBE_PIN Z_PROBE_PIN // Pin 32 is the RAMPS default
 
 /**
  * Probe Type
@@ -876,7 +876,7 @@
 /**
  * The "Manual Probe" provides a means to do "Auto" Bed Leveling without a probe.
  * Use G29 repeatedly, adjusting the Z height at each point with movement commands
- * or (with LCD_BED_LEVELING) the LCD controller.
+ * or (with Z_MIN_PROBE_PIN_LEVELING) the LCD controller.
  */
 //#define PROBE_MANUALLY
 //#define MANUAL_PROBE_START_Z 0.2
