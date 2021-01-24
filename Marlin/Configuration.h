@@ -495,9 +495,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 112.0 }
   #else
     // Ender 3 v2
-    #define DEFAULT_Kp 32.90
-    #define DEFAULT_Ki 3.70
-    #define DEFAULT_Kd 73.18
+    #define DEFAULT_Kp 32.97
+    #define DEFAULT_Ki 3.43
+    #define DEFAULT_Kd 79.29
   #endif
 #endif // PIDTEMP
 
@@ -989,7 +989,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET {  -49, 0, 0 }
+#define NOZZLE_TO_PROBE_OFFSET {  -59, -35, 0 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1125,8 +1125,8 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 232
-#define Y_BED_SIZE 232
+#define X_BED_SIZE 230
+#define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
